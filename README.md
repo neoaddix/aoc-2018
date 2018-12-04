@@ -2,7 +2,11 @@
 Advent of Code 2018 - Excel creativity
 
 
-## Day 1
+## --- Day 1: Chronal Calibration ---
+
+The first part of the assignment was quite easy in Excel: just copy all the numbers in 1 column and in the next column add a formula calculate each next value `B2=A2+B1`
+
+The second part is unpredictable because we need to calculate which number is repeated first. I could not see a way to predict when this would happen, so I just created a macro that keeps on doing the above calculation, checks if the number is already present in the previous results and when that happens shows an alert window. This took Excel about 2 hours ;-)
 
 ```
 Sub copy_columns()
